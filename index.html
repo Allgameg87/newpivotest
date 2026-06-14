@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО Пивоваренный завод "Каневской"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Каневской" loading="lazy">
+                </a>
+            </div>
+            <a href="index.html" class="header-center">
+                <div class="company-name">
+                    <img src="images/kanev.png" alt="Каневской" class="company-brand" loading="lazy">
+                    <p>Пиво Кубани с 2021 года</p>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="katalog/index.html">Продукты</a>
+                <a href="katalog/index.html">Каталог</a>
+                <a href="onas/index.html">О нас</a>
+                <a href="kontakt/index.html">Контакты</a>
+                <a href="novosti/index.html">Новости</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu">
+            <div class="menu-close-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-header">
+                <h3>Навигация</h3>
+            </div>
+            <a href="index.html">Главная</a>
+            <a href="novosti/index.html">Новости</a>
+            <a href="katalog/index.html">Продукты</a>
+            <a href="onas/index.html">О нас</a>
+            <a href="kontakt/index.html">Контакты</a>
+            <a href="serf/index.html">Сертификаты</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1>ООО Пивоваренный завод "Каневской"</h1>
+            <p>Оптовые поставки пива «Каневское» в стекле, банке и ПЭТ-кегах</p>
+            <a href="katalog/index.html" class="cta-button">Наша продукция</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Наша продукция</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/Kanevskoe mini.jpg" alt="Светлое пиво" loading="lazy">
+                <h3>Светлое «Каневское»</h3>
+                <p>Светлое непастеризованное фильтрованное пиво 0,5 л и 30 л.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Moscow.jpg" alt="Пиво «Московское»" loading="lazy">
+                <h3>Пиво «Московское»</h3>
+                <p>Светлое непастеризованное фильтрованное пиво, стекло/банка 3 л.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/Velvety Big.jpg" alt="Пиво «Бархатное»" loading="lazy">
+                <h3>Тёмное «Бархатное»</h3>
+                <p>Тёмное непастеризованное нефильтрованное пиво в ПЭТ-кеге 30 л.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>О нас</h2>
+        <p>ООО Пивоваренный завод «Каневской» производит пиво для оптовых поставок по адресу: 353732, Краснодарский край, р-н Каневской, ст-ца Каневская, ул. Краснодарская 214. В ассортименте — бутылка и банка 0,5 л, стекло/банка 3 л, а также ПЭТ-кеги 30 л. Минимальный заказ — от 200 литров или от 20 000 рублей.</p>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="contacts">
+        <p>© 2025 ООО Пивоваренный завод "Каневской". Все права защищены.</p>
+        <p>Контакты: <a href="mailto:yourbeer2018@yandex.ru">yourbeer2018@yandex.ru</a> | <a href="tel:+79282046464">+7 (928) 204-64-64</a></p>
+    </footer>
+
+    <!-- GSAP and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

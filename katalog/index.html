@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО Пивоваренный завод "Каневской"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="images/logo.png" alt="Каневской" loading="lazy">
+                </a>
+            </div>
+            <a href="../index.html" class="header-center">
+                <div class="company-name">
+                    <img src="images/kanev.png" alt="Каневской" class="company-brand" loading="lazy">
+                    <p>Пиво Кубани с 2021 года</p>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Главная</a>
+                <a href="#catalog">Каталог</a>
+                <a href="../onas/index.html">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu">
+            <div class="menu-close-btn">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-header">
+                <h3>Навигация</h3>
+            </div>
+            <a href="../index.html">Главная</a>
+            <a href="../novosti/index.html">Новости</a>
+            <a href="index.html">Продукты</a>
+            <a href="../onas/index.html">О нас</a>
+            <a href="../kontakt/index.html">Контакты</a>
+            <a href="../serf/index.html">Сертификаты</a>
+        </div>
+    </header>
+
+
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalog">
+        <h2>Каталог продукции</h2>
+        <p class="catalog-subtitle">Оптовый ассортимент пива «Каневское»: бутылка, банка, ПЭТ-кега. Самовывоз и доставка.</p>
+
+        <div class="catalog-filters" role="toolbar" aria-label="Фильтр по объёму">
+            <button type="button" class="filter-btn active" data-filter="all">Все</button>
+            <button type="button" class="filter-btn" data-filter="0.5">Бутылки 0,5 л</button>
+            <button type="button" class="filter-btn" data-filter="3">Банки 3 л</button>
+            <button type="button" class="filter-btn" data-filter="30">Кеги 30 л</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-catalog">
+            <p class="catalog-empty" id="catalogEmpty">В этой категории пока нет позиций.</p>
+            
+            <div class="product-item" data-volume="0.5">
+                <div class="product-image">
+                    <img src="images/Zhigulevskoe mini.jpg" alt="Пиво «Жигулевское» 0,5 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Жигулевское» 0,5 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Упаковка 12 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">0,5 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="0.5">
+                <div class="product-image">
+                    <img src="images/Kanevskoe mini.jpg" alt="Пиво «Каневское» 0,5 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское» 0,5 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Стекло/банка, упаковка 12 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">0,5 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="3">
+                <div class="product-image">
+                    <img src="images/Kanevskoe.jpg" alt="Пиво «Каневское» 3 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское» 3 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Стекло/банка, упаковка 4 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">3 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="3">
+                <div class="product-image">
+                    <img src="images/Moscow.jpg" alt="Пиво «Московское» 3 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Московское» 3 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Стекло/банка, упаковка 4 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">3 л</span>
+                        <span class="fat">11% / 4,5%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="3">
+                <div class="product-image">
+                    <img src="images/Stanichnoe.jpg" alt="Пиво «Станичное» 3 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Станичное» 3 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Стекло/банка, упаковка 4 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">3 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="3">
+                <div class="product-image">
+                    <img src="images/Czech.jpg" alt="Пиво «Чешское» 3 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Чешское» 3 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. Стекло/банка, упаковка 4 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">3 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="3">
+                <div class="product-image">
+                    <img src="images/Czech Unfiltered.jpg" alt="Пиво «Чешское» нефильтрованное 3 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Чешское» нефильтрованное 3 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. Упаковка 4 шт.</p>
+                    <div class="product-details">
+                        <span class="volume">3 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Velvety Big.jpg" alt="Пиво «Бархатное» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Бархатное» 30 л</h3>
+                    <p class="product-description">Пиво темное непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">13% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Kanevskoe white Big.jpg" alt="Пиво «Каневское белое» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское белое» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 15 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Zhigulevskoe Big.jpg" alt="Пиво «Жигулевское» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Жигулевское» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/German Big.jpg" alt="Пиво «Немецкое» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Немецкое» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 21 сутки</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Kanevskoe Big.jpg" alt="Пиво «Каневское» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Kanevskoe Unfiltered Big.jpg" alt="Пиво «Каневское» нефильтрованное 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское» нефильтрованное 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Krasnodarskoe Big.jpg" alt="Пиво «Краснодарское» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Краснодарское» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 15 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Summer Big.jpg" alt="Пиво «Летнее» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Летнее» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">10% / 4%</span>
+                        <span class="volume">срок: 21 сутки</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Stanichnoe Big.jpg" alt="Пиво «Станичное» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Станичное» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Moscow Big.jpg" alt="Пиво «Московское» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Московское» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4,5%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Czech Big.jpg" alt="Пиво «Чешское» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Чешское» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Czech Unfiltered Big.jpg" alt="Пиво «Чешское» нефильтрованное 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Чешское» нефильтрованное 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Kanevsky branded Big.jpg" alt="Пиво «Каневское фирменное» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Каневское фирменное» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное нефильтрованное неосветленное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">12% / 4,5%</span>
+                        <span class="volume">срок: 30 суток</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-volume="30">
+                <div class="product-image">
+                    <img src="images/Yuzhnoye Big.jpg" alt="Пиво «Южное» 30 л" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Пиво «Южное» 30 л</h3>
+                    <p class="product-description">Пиво светлое непастеризованное фильтрованное. ПЭТ-кега.</p>
+                    <div class="product-details">
+                        <span class="volume">30 л</span>
+                        <span class="fat">11% / 4%</span>
+                        <span class="volume">срок: 21 сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-terms">
+            <h3>Условия заказа</h3>
+            <p>Минимальный объем заказа — от 200 литров или общей суммой от 20 000 рублей. Цены указаны в формате: самовывоз / доставка.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts">
+        <p>© 2025 ООО Пивоваренный завод "Каневской". Все права защищены.</p>
+        <p>Контакты: <a href="mailto:yourbeer2018@yandex.ru">yourbeer2018@yandex.ru</a> | <a href="tel:+79282046464">+7 (928) 204-64-64</a></p>
+    </footer>
+
+    <!-- GSAP and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
